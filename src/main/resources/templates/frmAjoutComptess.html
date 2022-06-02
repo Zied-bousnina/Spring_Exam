@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+		<div layout:fragment="content">
+			<fieldset>
+				<legend>Ajout d'un Compte</legend>
+				<form th:action="@{/ajoutcompte}" method="post"
+					class="form-horizontal" role="form">
+					<div class="form-group">
+					<div class="row">
+						<div class="col-9">
+							<label class="control-label">Type Cpt</label> <input
+								class="form-control" type="text" name="type"> </input>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-9">
+							<label class="control-label">solde</label> <input
+								class="form-control" type="number" name="solde"> </input>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-9">
+							<label class="control-label">decouvert</label> <input
+								class="form-control" type="number" name="decouvert"> </input>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-9">
+							<label class="control-label">taux</label> <input
+								class="form-control" type="number" name="taux"> </input>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-9">
+							<label class="control-label">code client</label> <input
+								class="form-control" type="number" name="code"> </input>
+						</div>
+					</div>
+					</div>
+					<div class="form-group">
+					<div class="row">
+						<div class="col-9">
+							<button class="btn btn-outline-primary btn-block" type="submit" name="nom">Enregistrer </button>
+						</div>
+					</div>
+				
+					</div>
+
+				</form>
+			</fieldset>
+		</div>
+	</div>
+
+	<script src="https://use.fontawesome.com/64d275551a.js"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
